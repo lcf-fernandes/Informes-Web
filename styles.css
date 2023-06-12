@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .password-container {
+    position: relative;
+  }
+
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .toggle-text {
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }

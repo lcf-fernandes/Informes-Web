@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <input type="text" id="username" class="input" placeholder="Nombre de Usuario">
+    <div class="password-container">
+      <input type="password" id="password" class="input" placeholder="Contraseña">
+      <span id="eyeIcon" class="eye-icon" onclick="toggleShowPassword()">
+      </span>
+    </div>
+    <button onclick="handleLogin()">Iniciar Sesión</button>
+    <div class="toggle-text" onclick="toggleLogin()">
+      ¿Aún no tienes una cuenta? Regístrate
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
