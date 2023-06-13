@@ -14,13 +14,31 @@
     <div class="password-container">
       <input type="password" id="password" class="input" placeholder="Contraseña">
       <span id="eyeIcon" class="eye-icon" onclick="toggleShowPassword()">
-      </span>
+    </span>
     </div>
     <button onclick="handleLogin()">Iniciar Sesión</button>
     <div class="toggle-text" onclick="toggleLogin()">
       ¿Aún no tienes una cuenta? Regístrate
     </div>
   </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "SUA_API_KEY",
+      authDomain: "SEU_AUTH_DOMAIN",
+      projectId: "SEU_PROJECT_ID",
+      storageBucket: "SEU_STORAGE_BUCKET",
+      messagingSenderId: "SEU_SENDER_ID",
+      appId: "SEU_APP_ID",
+      measurementId: "SEU_MEASUREMENT_ID"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
   <script src="script.js"></script>
 </body>
